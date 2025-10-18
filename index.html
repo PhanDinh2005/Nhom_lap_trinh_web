@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nhóm 1 - Portfolio</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      body {
+        background: #0f1724;
+        color: #f8fafc;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 20px;
+      }
+
+      h1 {
+        color: #38bdf8;
+        margin-bottom: 40px;
+        font-size: 2.2rem;
+        text-align: center;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 25px;
+        width: 100%;
+        max-width: 900px;
+      }
+
+      .card {
+        background: #1e293b;
+        border-radius: 15px;
+        padding: 20px;
+        text-align: center;
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+
+      .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+      }
+
+      .card img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 15px;
+        border: 3px solid #38bdf8;
+      }
+
+      .card a {
+        display: inline-block;
+        text-decoration: none;
+        color: #0f1724; /* chữ màu tối */
+        background: #38bdf8; /* nền màu accent */
+        font-weight: bold;
+        margin-top: 15px;
+        padding: 10px 20px;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+
+      .card a:hover {
+        background: #0ea5e9; /* đổi màu sáng hơn khi hover */
+        transform: translateY(-3px);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Nhóm 1 - Portfolio</h1>
+    <div class="grid">
+      <div class="card">
+        <img src="./img/khiêm.png" alt="Nguyễn Trần Gia Khiêm" />
+        <h3>Nguyễn Trần Gia Khiêm</h3>
+        <a href="https://khiem-0806.github.io/bai_giua_ky/#" target="_blank"
+          >Xem bài</a
+        >
+      </div>
+      <div class="card">
+        <img src="./img/chiến.png" alt="Đỗ Chiến" />
+        <h3>Đỗ Chiến</h3>
+        <a href="https://dochien2024.github.io/portfolio/" target="_blank"
+          >Xem bài</a
+        >
+      </div>
+      <div class="card">
+        <img src="/img/đỉnh.png" alt="Phan Văn Đỉnh" />
+        <h3>Phan Văn Đỉnh</h3>
+        <a href="https://phandinh2005.github.io/bai_giua_ky/" target="_blank"
+          >Xem bài</a
+        >
+      </div>
+      <div class="card">
+        <img src="/img/cường.png" alt="Đào Duy Cường" />
+        <h3>Đào Duy Cường</h3>
+        <a href="#" target="_blank">Chưa có bài</a>
+      </div>
+      <div class="card">
+        <img src="/img/nhân.png" alt="Ái Nhân" />
+        <h3>Ái Nhân</h3>
+        <a href="#" target="_blank">Chưa có bài</a>
+      </div>
+    </div>
+  </body>
+</html>
